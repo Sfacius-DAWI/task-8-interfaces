@@ -1,0 +1,48 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav {
+    background-color: #e6e6e6;
+    padding: 10px;
+    ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        margin: 0 5px;
+        ul{
+            display: none;
+        }
+        &:hover{
+            ul{
+                display: block;
+                padding: 0;
+                position: absolute;
+                padding-top: 10px;
+                transition: opacity 0.3s ease;
+                opacity: 1;
+                li{
+                    margin: 0;
+                    padding: 10px 0;
+                    
+                    
+                }
+                }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        &:hover{
+            
+                background-color: #555;
+                color: #fff;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            
+    
+        }
+    }
+}
+}
